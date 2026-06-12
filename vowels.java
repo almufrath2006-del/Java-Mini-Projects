@@ -9,13 +9,15 @@ public class vowels {
         for (int j=0;j<name.length();j++) {
             for (char string : vow) {
                 if(name.charAt(j)==string){
-                    System.err.println("vowel word");i++;break;
+                    i++;
                 }
-                break;
             }
         }
         if(i==0){
             System.out.println("Not vowel word");
+        }
+        else{
+            System.out.println("vowels Word");
         }     
     }
 } 
