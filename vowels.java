@@ -1,16 +1,21 @@
 import java.util.Scanner;
 public class vowels {
     public static void main(String[] args) {
-        String[]vow={"a","e","i","o","u"};
+        char[]vow={'a','e','i','o','u'};
         Scanner sc=new Scanner(System.in);
+        int i=0;
         System.out.println("Enter a word");
         String name=sc.nextLine();
-        for(int i=0;i<name.length();i++){
-            for (String j : vow) {
-                if(j.equals(name.charAt(i))){
-                System.out.println("vowels word");
+        for (int j=0;j<name.length();j++) {
+            for (char string : vow) {
+                if(name.charAt(j)==string){
+                    System.err.println("vowel word");i++;break;
                 }
+                break;
             }
         }
-    } 
-}
+        if(i==0){
+            System.out.println("Not vowel word");
+        }     
+    }
+} 
