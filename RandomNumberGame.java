@@ -16,7 +16,7 @@ public class RandomNumberGame {
                 System.out.println("greater");
                 a=muf.nextInt();b++;
             }
-        }
+        }  
         if (a==rand) {
             b++;
             if(b==1){
