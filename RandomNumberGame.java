@@ -3,8 +3,8 @@ public class RandomNumberGame {
     public static void main(String[] args) {
         Scanner muf=new Scanner(System.in);
         Random r=new Random();
-        System.out.println("Enter number.");
-        int rand=r.nextInt(10);
+        System.out.println("I gussed,Enter number.");
+        int rand=r.nextInt(100);
         int b=0;
         int a=muf.nextInt();
         while (a!=rand) {
